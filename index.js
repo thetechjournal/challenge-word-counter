@@ -1,4 +1,4 @@
-const editor = document.getElementById('txtid')
+const editor = document.getElementById('text-editor')
 const wordCounter = document.getElementById('word-count')
 const charCounter = document.getElementById('char-count')
 const charCountWithoutSpace = document.getElementById('count-without-space')
@@ -12,7 +12,7 @@ const infoElements = document.getElementsByClassName('info')
 buttonClear.addEventListener('click', () => {
     editor.value = "";
     for (let i=0; i<infoElements.length; i++) infoElements[i].textContent = 0
-    longest.textContent = '_ _ _ _ _ _ _ _ _ _ _ _';
+    longest.textContent = '_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _';
 })
 
 buttonCopy.addEventListener('click', () => {
