@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Each Word Matters</title>
+</head>
+<body>
+    <div class="container">
+        <textarea spellcheck="true" id="txtid" name="txtname" rows="20" cols="50" maxlength="2000" placeholder="Type your text here..."></textarea>
+        <div>
+            <button id="btn-clear">Clear</button>
+            <button id="btn-copy">Copy to clipboard</button>
+        </div>
+   
+        <div class="stats">
+            <div class="stats-details">
+                <span class="info" id="word-count">0</span> 
+                <p>Word count</p>
+                
+            </div>
+            <div class="stats-details">
+                <span class="info" id="char-count">0</span> 
+                <p>Characters</p>
+                
+            </div>
+            <div class="stats-details">
+                <span class="info" id="count-without-space">0</span> 
+                <p>Characters without space</p>
+            </div>
+            <div class="stats-details">
+                <span class="info" id="sentence-count">0</span> 
+                <p>Sentences</p>
+            </div>
+            <div class="stats-details">
+                <span class="info" id="para-count">0</span> 
+                <p>Paragraph</p>
+            </div>
+        </div>
+        <div class="word-longest-container">
+            <p><p>Longest Word: <span class="info info-longest" id="longest">_ _ _ _ _ _ _ _ _ _ _ _</span></p></p>
+        </div>
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
